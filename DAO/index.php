@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+
+
 /*$sql = new Sql();
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 echo json_encode($usuarios);*/
@@ -33,9 +35,16 @@ $aluno->insert();
 echo $aluno;*/
 
 //Update
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(3);
 $usuario->update("professor", "!@#%¨&");
+echo $usuario;
+*/
+
+//Delete
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->delete();
 echo $usuario;
 
 ?>
