@@ -28,9 +28,14 @@ $usuario->login("leonardo", "qwerty");
 echo $usuario;*/
 
 //Insert
-$aluno = new Usuario("aluno2", "@lun02");
+/*$aluno = new Usuario("aluno2", "@lun02");
 $aluno->insert();
+echo $aluno;*/
 
-echo $aluno;
+//Update
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->update("professor", "!@#%¨&");
+echo $usuario;
 
 ?>
