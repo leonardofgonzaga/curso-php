@@ -23,8 +23,14 @@ echo json_encode($search);
  */
 
 //Carrega um usuário usando login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("leonardo", "qwerty");
-echo $usuario;
+echo $usuario;*/
+
+//Insert
+$aluno = new Usuario("aluno2", "@lun02");
+$aluno->insert();
+
+echo $aluno;
 
 ?>
