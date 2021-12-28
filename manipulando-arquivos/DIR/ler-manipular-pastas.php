@@ -21,7 +21,7 @@ foreach ($images as $img) {
 		$info = pathinfo($filePath);
 		$info["size"] = filesize($filePath);
 		$info["modified"] = date("d/m/Y H:i:s", filemtime($filePath));
-		$info["url"] = "http://localhost/DIR/" . str_replace("\\", "/", $filePath);
+		$info["url"] = "http://localhost/manipulando-arquivos/DIR/" . str_replace("\\", "/", $filePath);
 		array_push($data, $info);
 	}
 }
